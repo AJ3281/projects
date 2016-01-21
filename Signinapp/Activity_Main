@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/buckysLast"
+        android:width="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Add"
+        android:id="@+id/addButton"
+        android:onClick="addButtonClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buckysPicture"
+        android:layout_alignLeft="@+id/buckysPicture"
+        android:layout_alignStart="@+id/buckysPicture" />
+
+    <Button
+        android:text="Delete"
+        android:id="@+id/deleteButton"
+        android:onClick="deleteButtonClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/addButton"
+        android:layout_alignRight="@+id/buckysSignature"
+        android:layout_alignEnd="@+id/buckysSignature" />
+
+    <TextView
+        android:id="@+id/buckysText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:layout_alignBottom="@+id/buckysPicture"
+        android:layout_toRightOf="@+id/addButton"
+        android:layout_toEndOf="@+id/addButton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buckysFirst"
+        android:layout_below="@+id/buckysLast"
+        android:layout_centerHorizontal="true"
+        android:width="300dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buckysEmail"
+        android:layout_below="@+id/buckysFirst"
+        android:layout_centerHorizontal="true"
+        android:width="300dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buckysPhone"
+        android:layout_below="@+id/buckysEmail"
+        android:layout_centerHorizontal="true"
+        android:width="300dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buckysCitizen"
+        android:layout_below="@+id/buckysPhone"
+        android:layout_centerHorizontal="true"
+        android:width="300dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buckysOrganization"
+        android:layout_below="@+id/buckysCitizen"
+        android:layout_centerHorizontal="true"
+        android:width="300dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buckysTitle"
+        android:layout_below="@+id/buckysOrganization"
+        android:layout_centerHorizontal="true"
+        android:width="300dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buckysPicture"
+        android:layout_below="@+id/buckysTitle"
+        android:layout_alignLeft="@+id/buckysTitle"
+        android:layout_alignStart="@+id/buckysTitle"
+        android:layout_marginTop="43dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buckysSignature"
+        android:layout_alignTop="@+id/buckysPicture"
+        android:layout_alignRight="@+id/buckysTitle"
+        android:layout_alignEnd="@+id/buckysTitle"
+        android:src="@mipmap/ic_launcher" />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Click me to another screen"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify"
+        android:id="@+id/verifyButton"
+        android:layout_above="@+id/button1"
+        android:layout_toRightOf="@+id/addButton"
+        android:layout_toEndOf="@+id/addButton"
+        android:onClick="verifyButtonClicked"
+        android:nestedScrollingEnabled="true" />
+
+</RelativeLayout>
